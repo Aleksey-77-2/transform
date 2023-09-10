@@ -1,0 +1,59 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	color: white;
+	background-color: #202020;
+}
+.transform__title{
+	font-size: 3rem;
+	text-align: center;
+}
+.wrap{
+	display: flex;
+	justify-content: center;
+}
+.block{
+	width: 30rem;
+	height: 30rem;
+	margin: 4rem 0;
+	transition: .6s;
+}
+hr{
+	border: 1px solid rgb(155, 151, 151);
+}
+.block:not(:last-child){
+	margin-right: 2rem;
+}
+.red{
+	background-color: rgb(223, 40, 40);
+}
+.blue{
+	background-color: rgb(47, 47, 241);
+}
+
+.translate__red:hover{
+	transform: translate(-5rem, -5rem);
+}
+.translate__blue:hover{
+	transform: translateY(-5rem);
+}
+.rotate__blue:hover{
+	transform-origin: left top;
+	transform: rotate(45deg);
+}
+.rotate__red:hover{
+	transform: rotateX(50deg);
+}
+.scale__blue:hover{
+	transform: scale(1.2);
+}
+.scale__red:hover{
+	transform: scaleX(-1.2);
+}
+.skew__blue:hover{
+	transform: skew(70deg);
+}
+.skew__red:hover{
+	transform: skewY(-70deg);
+}
